@@ -1,0 +1,346 @@
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #232323;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333333;
+    border-radius: 6px;
+}
+
+.neon-text {
+    color: #00FFFF;
+    text-shadow: 0 0 0px #00FFFF, 0 0 1px #00FFFF, 0 0 2px #00FFFF;
+    background-color: rgb(34, 36, 41);
+}
+
+.neon-text-gray{
+    color: #858585;
+    text-shadow: 0 0 0px #858585, 0 0 0.5px #858585, 0 0 1px #858585;
+    background-color: rgb(34, 36, 41);
+}
+
+.neon-text-versions{
+    color: #f7f7f7;
+    text-shadow: 0 0 0px #f7f7f7, 0 0 0.5px #f7f7f7, 0 0 1px #f7f7f7;
+    background-color: rgb(34, 36, 41);
+    font-size: 1.1rem;
+}
+
+.neon-text-permission {
+    color: #00FFFF;
+    text-shadow: 0 0 0px #00FFFF, 0 0 1px #00FFFF, 0 0 2px #00FFFF;
+}
+
+body{
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,
+    Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,
+    Helvetica Neue,Helvetica,Arial,sans-serif;
+
+    background-color: rgb(23, 24, 28);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h3, h2, h1, p, a{
+    color: white;
+    text-decoration: none;
+}
+
+.separation{
+    color: transparent;
+}
+
+header{
+    background-color: rgb(28, 28, 28);
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+}
+
+.content {
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.sidebar {
+    background-color: rgb(28, 28, 28);
+    color: rgb(255, 255, 255);
+    width: 230px;
+    height: 466px;
+    padding: 20px;
+    border-top: 2px solid #282828;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sidebar-content{
+    border: 3px solid transparent;
+    width: 70%;
+    display: block;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 19px;
+    background-color: transparent;
+    color: white;
+    transition: background-color 0.5s;
+    text-align: left;
+}
+
+.sidebar-content:hover{
+    border: 3px solid transparent;
+    background-color: hsla(208, 100%, 50%, 0.333);;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.sidebar-principal{
+    cursor: pointer;
+    width: 70%;
+    display: block;
+    font-size: 19px;
+    background-color: hsla(208, 100%, 50%, 0.11);;
+    border: 3px solid transparent;
+    border-radius: 0.5rem;
+    color: white;
+    text-align: left;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.plus{
+    display: inline-block;
+    font-size: 4rem;
+    position: relative;
+    margin-top: -0.5rem;
+    margin-left: 2rem;
+    transition: color 0.5s;
+    cursor: default;
+}
+
+.plus:hover{
+    color: #00FFFF;
+    text-shadow: 0 0 0px #00FFFF, 0 0 1px #00FFFF, 0 0 2px #00FFFF;
+}
+
+.name{
+    top: -0.5rem;
+    display: inline-block; 
+    position: relative;
+    cursor: default;
+}
+
+.code-block {
+    border: 1px solid rgb(34, 36, 41);;
+    background-color: rgb(34, 36, 41);;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.version-block {
+    cursor: default;
+    border: 1px solid rgb(34, 36, 41);;
+    background-color: rgb(34, 36, 41);;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 22rem;
+}
+
+.version-block:hover {
+    transform: translateY(-4px);
+}
+
+h3 {
+    font-size: 15px;
+    margin-top: 0;
+}
+
+pre {
+    margin: 0;
+    margin-left: -12.5rem;
+}
+
+code {
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+}
+
+code::before {
+    content: attr(data-line-number);
+    display: inline-block;
+    width: 2em;
+    padding-right: 1em;
+    margin-right: 1em;
+    border-right: 1px solid rgb(34, 36, 41);;
+    text-align: right;
+    user-select: none;
+}
+
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 36, 41, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.loader {
+    font-size: 3rem;
+    color: #00FFFF;
+    text-shadow: 0 0 0px #00FFFF, 0 0 1px #00FFFF, 0 0 2px #00FFFF;
+    background-color: rgb(34, 36, 41);
+}
+
+.history {
+    position: fixed;
+    top: 2.7rem;
+    right: 70px;
+    font-weight: bold;
+}
+
+.history::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    color: rgb(34, 36, 41);
+    text-shadow: 0 0 0px #00FFFF, 0 0 1px #00FFFF, 0 0 2px #00FFFF;
+    background-color: #00FFFF;
+    transition: width 0.5s;
+}
+
+.history:hover::after {
+    width: 100%;
+}
+
+.home {
+    position: fixed;
+    top: 2.7rem;
+    right: 15px;
+    font-weight: bold;
+}
+
+.home::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    color: rgb(34, 36, 41);
+    text-shadow: 0 0 0px #00FFFF, 0 0 1px #00FFFF, 0 0 2px #00FFFF;
+    background-color: #00FFFF;
+    transition: width 0.5s;
+}
+
+.home:hover::after {
+    width: 100%;
+}
+
+.menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.247);
+    z-index: 1;
+}
+
+.menu {
+    position: fixed;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    z-index: 2;
+    transition: left 0.5s ease-out;
+}
+
+@media screen and (max-width: 767px) {
+    .menu-btn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+
+        position: relative;
+        margin-left: 288px;
+        top: -50px;
+        transition: color 0.5s;
+    }
+
+    .menu-btn:hover {
+        color: #00FFFF;
+        text-shadow: 0 0 0px #00FFFF, 0 0 1px #00FFFF, 0 0 2px #00FFFF;
+    }
+    
+    .sidebar {
+        margin-left: 1000rem;
+    }
+
+    .content {
+        margin-left: 230px;
+        margin-top: -520px;
+    }
+
+    main {
+        margin-left: -230px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .history {
+        margin-right: 1000px;
+    }
+
+    .home {
+        margin-right: 1000px;
+    }
+
+    .plus{
+        margin-top: -0.5rem;
+        margin-left: -0.5rem;
+    }
+    
+    .name{
+        top: -0.5rem;
+        display: inline-block; 
+        position: relative;
+        cursor: default;
+        margin-left: -0.5rem;
+    }
+}

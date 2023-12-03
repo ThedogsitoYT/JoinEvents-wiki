@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JoinEvents wiki</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1 class="plus">+</h1>
+        <h2 class="name">JoinEvents</h2>
+        <div class="menu-btn" onclick="toggleSidebar()">
+            <i class="fas fa-bars" id="menu-btn-button"></i>
+        </div>
+
+        <a href="history.html" class="history">History versions</a>
+        <a href="index.html" class="home">Home</a>
+    </header>
+
+    <div class="menu-overlay" onclick="toggleSidebar()"></div>
+
+    <div class="menu">
+        <div class="content">
+            <div class="sidebar">
+                <a href="history.html" class="history">History versions</a>
+                <a href="index.html" class="home">Home</a>
+        
+                
+
+                <a class="sidebar-content" href="index.html">JoinEvents Wiki</a>
+                <a class="sidebar-content" href="ots.html">How to start</a>
+    
+                
+    
+                <a class="sidebar-principal" href="hub.html">Hub</a>
+                <a class="sidebar-content" href="titles.html">Titles</a>
+                <a class="sidebar-content">Spawns</a>
+                <a class="sidebar-content">Sounds</a>
+                <a class="sidebar-content">BossBar</a>
+                <a class="sidebar-content">Fireworks</a>
+                <a class="sidebar-content">Ip protect</a>
+                <a class="sidebar-content">Scoreboard</a>
+                <a class="sidebar-content">Launch pads</a>
+                <a class="sidebar-content">Join messages</a>
+                <a class="sidebar-content">Join commands</a>
+                <a class="sidebar-content">CustomItems Join</a>
+    
+                <p>ñañaña</p>
+    
+                <button class="sidebar-content">Colors</button>
+                <button class="sidebar-content">Variables</button>
+                <button class="sidebar-content">Placeholders</button>
+                <button class="sidebar-content">Configurations</button>
+                <button class="sidebar-content">Commands and permissions</button>
+            </div>
+        </div>  
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <a class="sidebar-content" href="index.html">JoinEvents Wiki</a>
+            <a class="sidebar-content" href="ots.html">How to start</a>
+
+            <li class="separation"></li>
+
+            <a class="sidebar-principal" href="hub.html">Hub</a>
+            <a class="sidebar-content" href="titles.html">Titles</a>
+            <a class="sidebar-content">Spawns</a>
+            <a class="sidebar-content">Sounds</a>
+            <a class="sidebar-content">BossBar</a>
+            <a class="sidebar-content">Fireworks</a>
+            <a class="sidebar-content">Ip protect</a>
+            <a class="sidebar-content">Scoreboard</a>
+            <a class="sidebar-content">Launch pads</a>
+            <a class="sidebar-content">Join messages</a>
+            <a class="sidebar-content">Join commands</a>
+            <a class="sidebar-content">CustomItems Join</a>
+
+            <li class="separation"></li>
+
+            <button class="sidebar-content">Colors</button>
+            <button class="sidebar-content">Variables</button>
+            <button class="sidebar-content">Placeholders</button>
+            <button class="sidebar-content">Configurations</button>
+            <button class="sidebar-content">Commands and permissions</button>
+        </div>
+
+        <main>
+            <div class="loader-wrapper" id="loader">
+                <div class="loader">
+                    <i class="fas fa-circle-notch fa-spin"></i>
+                </div>
+            </div>
+
+            <h1>Create one hub</h2>
+
+                <li class="separation"></li>
+
+                <h2>In spigot</h2>
+                <p>you must run the <span class="neon-text">/sethub</span> command anywhere in the world and the XYZ, Pitch, Yaw 
+                    <br> and the world are saved and then run <span class="neon-text">/hub</span>. Example:
+                </p>
+
+                <li class="separation"></li>
+
+                <div class="code-block">
+                    <h3><span class="neon-text-gray">Commands</span></h3>
+                    <pre>
+                        <code>
+                            <span class="neon-text-gray">1</span> <span class="neon-text">Commands:</span>  
+                            <span class="neon-text-gray">2</span> <span class="neon-text">  Hub:</span> 
+                            <span class="neon-text-gray">3</span> <span class="neon-text">    SecondsWait: 3</span>  
+                            <span class="neon-text-gray">4</span> <span class="neon-text">    X: 37,454</span>
+                            <span class="neon-text-gray">5</span> <span class="neon-text">    Y: '60'</span>  
+                            <span class="neon-text-gray">6</span> <span class="neon-text">    Z: 180</span> 
+                            <span class="neon-text-gray">7</span> <span class="neon-text">    Yaw: 147,437</span> 
+                            <span class="neon-text-gray">8</span> <span class="neon-text">    Pitch: 21,378</span> 
+                            <span class="neon-text-gray">9</span> <span class="neon-text">    World: world</span>
+                        </code>
+                    </pre>
+                </div>
+
+                <li class="separation"></li>
+
+                <h2>In bungeecord</h2>
+
+                <p>It will be similar to spigot but you must run 
+                    <span class="neon-text">/bsethub</span> to create the hub and then 
+                    <span class="neon-text">/bhub</span> to go to the hub. <br>
+                    with the plugin: <span class="neon-text">Bungee JoinEvents</span></p>
+        </main>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>

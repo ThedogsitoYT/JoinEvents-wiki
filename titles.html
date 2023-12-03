@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JoinEvents wiki</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="plus">+</h1>
+        <h2 class="name">JoinEvents</h2>
+
+        <a href="history.html" class="history">History versions</a>
+        <a href="index.html" class="home">Home</a>
+    </header>
+
+    <div class="content">
+        <div class="sidebar">
+            <a class="sidebar-content" href="index.html">JoinEvents Wiki</a>
+            <a class="sidebar-content" href="ots.html">How to start</a>
+        
+            <li class="separation"></li>
+
+            <a class="sidebar-content" href="hub.html">Hub</a>
+            <a class="sidebar-principal" href="titles.html">Titles</a>
+            <a class="sidebar-content">Spawns</a>
+            <a class="sidebar-content">Sounds</a>
+            <a class="sidebar-content">BossBar</a>
+            <a class="sidebar-content">Fireworks</a>
+            <a class="sidebar-content">Ip protect</a>
+            <a class="sidebar-content">Scoreboard</a>
+            <a class="sidebar-content">Launch pads</a>
+            <a class="sidebar-content">Join messages</a>
+            <a class="sidebar-content">Join commands</a>
+            <a class="sidebar-content">CustomItems Join</a>
+        
+            <li class="separation"></li>
+
+            <button class="sidebar-content">Colors</button>
+            <button class="sidebar-content">Variables</button>
+            <button class="sidebar-content">Placeholders</button>
+            <button class="sidebar-content">Configurations</button>
+            <button class="sidebar-content">Commands and permissions</button>
+    </div>
+
+        <main id="main">
+            <div class="loader-wrapper" id="loader">
+                <div class="loader">
+                    <i class="fas fa-circle-notch fa-spin"></i>
+                </div>
+            </div>
+            
+            <h1>Create Title & Subtitle</h1>
+
+            <li class="separation"></li>
+
+            <p>To create a title and subtitle you must take into account the following portion of code</p>
+            
+            <li class="separation"></li>
+
+            <div class="code-block">
+                <h3><span class="neon-text-gray">config.yml</span></h3>
+                <pre>
+                    <code>
+                        <span class="neon-text-gray">1</span> <span class="neon-text">Enabled: true</span>  
+                        <span class="neon-text-gray">2</span> <span class="neon-text">Title: &b&lWelcome %player%!</span>
+                        <span class="neon-text-gray">3</span> <span class="neon-text">SubTitle: &b&lThanks for enter to the server</span>  
+                    </code>
+                </pre>
+            </div>
+
+            <li class="separation"></li>
+
+            <p>It must be taken into account that the Title and Subtitle support PlaceholderAPI</p>
+            <p>The permission to see the title and subtitle upon entering is: <span class="neon-text-permission">je.title</span> - <span class="neon-text-permission">je.*</span></p>
+        </main>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
