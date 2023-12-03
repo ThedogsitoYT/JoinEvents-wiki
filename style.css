@@ -333,7 +333,7 @@ code::before {
 
     .plus{
         margin-top: -0.5rem;
-        margin-left: -0.5rem;
+        margin-left: 0.5rem;
     }
     
     .name{
@@ -341,6 +341,6 @@ code::before {
         display: inline-block; 
         position: relative;
         cursor: default;
-        margin-left: -0.5rem;
+        margin-left: 0.6rem;
     }
 }
